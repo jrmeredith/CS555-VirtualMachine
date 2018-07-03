@@ -42,3 +42,5 @@
 *.filters
 *.user
 *.vs/
+debug/
+release/
