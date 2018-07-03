@@ -58,6 +58,7 @@ void StackVM::doPrimitive() {
 	case 1:	// add
 		cout << "add " << memory[sp - 1] << " " << memory[sp] << endl;
 		memory[sp - 1] = memory[sp - 1] + memory[sp];
+		sp--;
 		break;
 	}
 }
@@ -71,7 +72,7 @@ void StackVM::run() {
 		cout << "tos: " << memory[sp] << endl;
 	}
 }
-
+ 
 void StackVM::loadProgram(vector<i32> prog) {
 	for (i32 i = 0; i < prog.size(); i++) {
 		memory[pc + i] = prog[i];
