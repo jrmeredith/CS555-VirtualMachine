@@ -74,7 +74,9 @@ void StackVM::run() {
 }
  
 void StackVM::loadProgram(vector<i32> prog) {
-	for (i32 i = 0; i < prog.size(); i++) {
+	i32 vecSize = prog.size();
+	for (i32 i = 0; i < vecSize; i++) {
 		memory[pc + i] = prog[i];
+		
 	}
 }
