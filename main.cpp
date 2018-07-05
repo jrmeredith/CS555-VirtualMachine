@@ -8,6 +8,5 @@ int main() {
 	cout << "Program loaded" << endl;
 	vm.run();
 
-	system("pause");
 	return 0;
 }
