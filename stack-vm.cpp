@@ -15,7 +15,8 @@ using namespace std;
 
 // Functions
 StackVM::StackVM() {
-	memory.reserve(1000000);
+	//memory.reserve(1000000);
+	memory.resize(1000000);
 }
 
 i32 StackVM::getType(i32 instruction) {
@@ -77,6 +78,5 @@ void StackVM::loadProgram(vector<i32> prog) {
 	i32 vecSize = prog.size();
 	for (i32 i = 0; i < vecSize; i++) {
 		memory[pc + i] = prog[i];
-		
 	}
 }
