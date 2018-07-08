@@ -52,13 +52,28 @@ void StackVM::execute() {
 
 void StackVM::doPrimitive() {
 	switch (dat) {
-	case 0:	// halt
+	case 0:		// halt
 		cout << "halt" << endl;
 		running = 0;
 		break;
-	case 1:	// add
+	case 1:		// add
 		cout << "add " << memory[sp - 1] << " " << memory[sp] << endl;
-		memory[sp - 1] = memory[sp - 1] + memory[sp];
+		memory[sp - 1] += memory[sp];
+		sp--;
+		break;
+	case 2:		// subtract
+		cout << "subtract " << memory[sp - 1] << " " << memory[sp] << endl;
+		memory[sp - 1] -= memory[sp];
+		sp--;
+		break;
+	case 3:		// multiply
+		cout << "multiply " << memory[sp - 1] << " " << memory[sp] << endl;
+		memory[sp - 1] *= memory[sp];
+		sp--;
+		break;
+	case 4:		// divide
+		cout << "divide " << memory[sp - 1] << " " << memory[sp] << endl;
+		memory[sp - 1] /= memory[sp];
 		sp--;
 		break;
 	}
@@ -80,5 +95,4 @@ void StackVM::loadProgram(vector<i32> prog) {
 		memory[pc + i] = prog[i];
 	}
 	cout << "Program loaded successfully!" << endl;
-	cout << endl;
 }
