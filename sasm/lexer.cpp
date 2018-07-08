@@ -135,3 +135,49 @@ strings Lexer::lex(string s) {
 	}
 	return strlst;
 }
+
+// This function allows us to define what a space is
+bool Lexer::my_isSpace(char c) {
+	switch (c)
+	{
+	case '\n':
+	case '\r':
+	case '\t':
+	case '\v':
+	case ' ':
+	case '\f':
+		return true;
+	default:
+		return false;
+		break;
+	}
+}
+
+bool Lexer::isGroup(char c) {
+	beg_char = c;
+	switch (c)
+	{
+	case '"':
+		end_char = '"';
+		return true;
+	case '(':
+		return true;
+	case ')':
+		return true;
+	default:
+		return false;
+		break;
+	}
+}
+
+bool Lexer::isSpecial(char c) {
+	switch (c)
+	{
+	case '[':
+	case ']':
+		return true;
+	default:
+		return false;
+		break;
+	}
+}
