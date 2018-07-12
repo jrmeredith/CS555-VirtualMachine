@@ -1,6 +1,6 @@
 CFLAGS=-std=c++11
 
-all: sasm
+all: sasm clean
 
 sasm: sasm.o lexer.o
 	$(CXX) $(CFLAGS) sasm.o lexer.o -o $@
