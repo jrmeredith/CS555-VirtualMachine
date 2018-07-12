@@ -3,24 +3,44 @@
 #include "stack-vm.h"
 using namespace std;
 
-int main(int argc, char *argv[]) {
+void pauseScreen();
 
-	if (argc < 2) {
-		cout << "Usage: " << argv[0] << " <filename>" << endl;
+int main() {
+
+	ifstream inFile;
+	
+	inFile.open("../stack-vm/out.bin", ios::in | ios::binary);
+
+	if (!inFile.is_open()) {
+		cout << "Could not open file!" << endl;
+		cout << endl;
+		cout << "out.bin must be in same folder as this exe!" << endl;
+		pauseScreen();
 		return 0;
 	}
+	else {
+		cout << "out.bin found!" << endl;
+		cout << endl;
+	}
 
-	ifstream r(argv[1], ios::binary);
 	i32 i;
 	vector<i32> prog;
-
-	while (r.read((char*)&i, sizeof(i))) {
+	
+	while (inFile.read((char*)&i, sizeof(i))) {
 		prog.push_back(i);
 	}
+
+	inFile.close();
 
 	StackVM vm;
 	vm.loadProgram(prog);
 	vm.run();
-
+	pauseScreen();
 	return 0;
+}
+
+void pauseScreen() {
+	cout << endl;
+	cout << "Press return to continue..." << flush;
+	cin.get();
 }
