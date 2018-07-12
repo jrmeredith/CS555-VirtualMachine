@@ -90,9 +90,11 @@ void StackVM::run() {
 }
  
 void StackVM::loadProgram(vector<i32> prog) {
+	cout << "Loading..." << endl;
 	//i32 vecSize = prog.size();
 	for (i32 i = 0; i < prog.size(); i++) {
 		memory[pc + i] = prog[i];
 	}
 	cout << "Program loaded successfully!" << endl;
+	cout << endl;
 }
