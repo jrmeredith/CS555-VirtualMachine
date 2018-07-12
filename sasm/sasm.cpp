@@ -13,20 +13,22 @@ bool isInteger(string s);
 bool isPrimitive(string s);
 i32 mapToNumber(string s);
 
-int main(int argc, char *argv[]) {
-	// check for input errors
-	if (argc != 2) {
-		cout << "Usage: " << argv[0] << " <sasm-filename>" << endl;
+void pauseScreen();
+
+int main() {
+	
+	// read input file
+	ifstream inFile;
+	inFile.open("test.sasm");
+	if (!inFile.is_open()) {
+		cout << "Error: could not open [test.sasm]" << endl;
+		pauseScreen();
 		exit(1);
 	}
 
-	// read input file
-	ifstream inFile;
-	inFile.open(argv[1]);
-	if (!inFile.is_open()) {
-		cout << "Error: could not open [" << argv[1] << "]" << endl;
-		exit(1);
-	}
+	cout << "Found test.sasm!" << endl;
+	cout << endl;
+
 	string line;
 	string contents;
 	while (getline(inFile, line)) {
@@ -44,10 +46,13 @@ int main(int argc, char *argv[]) {
 	// write to binary file
 	ofstream oFile;
 	oFile.open("out.bin", ios::binary);
+	cout << "Writting to out.bin..." << endl;
 	for (i32 i = 0; i < instructions.size(); i++) {
 		oFile.write(reinterpret_cast<char *>(&instructions[i]), sizeof(i32));
 	}
 	oFile.close();
+	cout << "Done!" << endl;
+	pauseScreen();
 	return 0;
 }
 
@@ -98,4 +103,10 @@ i32 mapToNumber(string s) {
 	else {
 		return -1;	// invalid instruction
 	}
+}
+
+void pauseScreen() {
+	cout << endl;
+	cout << "Press return to continue..." << flush;
+	cin.get();
 }
