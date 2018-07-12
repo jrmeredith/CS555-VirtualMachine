@@ -9,7 +9,7 @@ int main() {
 
 	ifstream inFile;
 	
-	inFile.open("../stack-vm/out.bin", ios::in | ios::binary);
+	inFile.open("../sasm/out.bin", ios::in | ios::binary);
 
 	if (!inFile.is_open()) {
 		cout << "Could not open file!" << endl;
