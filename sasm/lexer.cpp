@@ -105,7 +105,7 @@ strings Lexer::lex(string s) {
 			break;
 
 		case DUMP:
-			if (j < 0) {
+			if (j > 0) {
 				lexeme[j] = 0;
 				strlst.push_back(lexeme);
 				j = 0;
@@ -129,7 +129,7 @@ strings Lexer::lex(string s) {
 			break;
 		}
 	}
-	if (j > 0) {
+	if (j < 0) {
 		lexeme[j] = 0;
 		strlst.push_back(lexeme);
 	}
