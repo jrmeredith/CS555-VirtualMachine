@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
 	ofstream oFile;
 	oFile.open("out.bin", ios::binary);
 	for (i32 i = 0; i < instructions.size(); i++) {
-		oFile.write(reinterpret_cast<char *>(instructions[i]), sizeof(i32));
+		oFile.write(reinterpret_cast<char *>(&instructions[i]), sizeof(i32));
 	}
 	oFile.close();
 	return 0;
