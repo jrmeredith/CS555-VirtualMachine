@@ -19,7 +19,7 @@ int main() {
 	
 	// read input file
 	ifstream inFile;
-	inFile.open("test.sasm");
+	inFile.open("../sasm/test.sasm");
 	if (!inFile.is_open()) {
 		cout << "Error: could not open [test.sasm]" << endl;
 		pauseScreen();
