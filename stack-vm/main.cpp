@@ -6,20 +6,19 @@ using namespace std;
 void pauseScreen();
 
 int main() {
-
+	cout << "Stack-VM Running!" << endl;
+	string fileDir = "../sasm/out.bin";
 	ifstream inFile;
 	
-	inFile.open("../sasm/out.bin", ios::in | ios::binary);
+	inFile.open(fileDir, ios::binary);
 
 	if (!inFile.is_open()) {
 		cout << "Could not open file!" << endl;
-		cout << endl;
 		pauseScreen();
 		return 0;
 	}
 	else {
 		cout << "out.bin found!" << endl;
-		cout << endl;
 	}
 
 	i32 i;
@@ -34,7 +33,7 @@ int main() {
 	StackVM vm;
 	vm.loadProgram(prog);
 	vm.run();
-	pauseScreen();
+	//pauseScreen();
 	return 0;
 }
 

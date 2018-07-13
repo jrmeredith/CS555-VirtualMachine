@@ -16,18 +16,19 @@ i32 mapToNumber(string s);
 void pauseScreen();
 
 int main() {
-	
+	cout << "SASM running!" << endl;
+	string fileDir = "../sasm/test.sasm";
+
 	// read input file
 	ifstream inFile;
-	inFile.open("../sasm/test.sasm");
+	inFile.open(fileDir);
+
 	if (!inFile.is_open()) {
-		cout << "Error: could not open [test.sasm]" << endl;
-		pauseScreen();
+		cout << "Error: could not open [" << fileDir << "]" << endl;
 		exit(1);
 	}
 
-	cout << "Found test.sasm!" << endl;
-	cout << endl;
+	cout << "Found " << fileDir << "!" << endl;
 
 	string line;
 	string contents;
@@ -45,14 +46,14 @@ int main() {
 
 	// write to binary file
 	ofstream oFile;
-	oFile.open("out.bin", ios::binary);
+	oFile.open("../sasm/out.bin", ios::binary);
 	cout << "Writting to out.bin..." << endl;
 	for (i32 i = 0; i < instructions.size(); i++) {
 		oFile.write(reinterpret_cast<char *>(&instructions[i]), sizeof(i32));
 	}
 	oFile.close();
 	cout << "Done!" << endl;
-	pauseScreen();
+	//pauseScreen();
 	return 0;
 }
 

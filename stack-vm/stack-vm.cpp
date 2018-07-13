@@ -96,5 +96,4 @@ void StackVM::loadProgram(vector<i32> prog) {
 		memory[pc + i] = prog[i];
 	}
 	cout << "Program loaded successfully!" << endl;
-	cout << endl;
 }

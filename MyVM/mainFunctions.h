@@ -6,5 +6,8 @@
 
 void pauseScreen();
 bool isFile(const char *name);
+void startProcess(const char *dir);
+void userCommands(std::string dir);
+void instructions();
 
 #endif

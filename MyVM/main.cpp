@@ -1,39 +1,28 @@
 #include <iostream>
-#include "mainFunctions.h"
 #include <Windows.h>
+#include "mainFunctions.h"
+#include <string>
 
 using namespace std;
 
 int main() {
+	LPCSTR sasm = "../sasm/sasm.exe";
+	LPCSTR stackvm = "../stack-vm/stack-vm.exe";
 
 	cout << "Jake's VM" << endl;
 	cout << endl;
 
+	instructions();
+	userCommands("../sasm/test.sasm");
+	cout << endl;
+
+	startProcess(sasm);
+
 	pauseScreen();
+	cout << endl;
 
-	if (isFile("../sasm/sasm.exe")) {
-		cout << "Found sasm.exe!" << endl;
-	}
-	else {
-		cout << "sasm.exe not found!" << endl;
-		pauseScreen();
-		return 0;
-	}
-
-	system("start ../sasm/sasm.exe");
-	pauseScreen();
-
-	if (isFile("../stack-vm/stack-vm.exe")) {
-		cout << "Found stack-vm.exe!" << endl;
-	}
-	else {
-		cout << "stack-vm.exe not found!" << endl;
-		pauseScreen();
-		return 0;
-	}
-
-	system("start ../stack-vm/stack-vm.exe");
-
+	
+	startProcess(stackvm);
 
 	pauseScreen();
 	return 0;
