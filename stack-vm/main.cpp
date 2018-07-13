@@ -14,7 +14,6 @@ int main() {
 	if (!inFile.is_open()) {
 		cout << "Could not open file!" << endl;
 		cout << endl;
-		cout << "out.bin must be in same folder as this exe!" << endl;
 		pauseScreen();
 		return 0;
 	}
