@@ -9,7 +9,7 @@ int main() {
 	LPCSTR sasm = "../sasm/sasm.exe";
 	LPCSTR stackvm = "../stack-vm/stack-vm.exe";
 
-	cout << "Jake's VM" << endl;
+	welcome();
 	cout << endl;
 
 	instructions();
