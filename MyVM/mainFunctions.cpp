@@ -3,6 +3,12 @@
 #include "mainFunctions.h"
 using namespace std;
 
+void welcome() {
+	cout << "====================" << endl;
+	cout << "|     Jake's VM    |" << endl;
+	cout << "====================" << endl;
+}
+
 void userCommands(const string dir) {
 	ofstream outFile;
 	outFile.open(dir);
@@ -16,10 +22,12 @@ void userCommands(const string dir) {
 }
 
 void instructions() {
-	cout << "Please enter the integers along with the instructions you wish to push onto the stack." << endl;
-	cout << "You must push two integers to begin with, followed by an operation (+, -, *, /)." << endl;
-	cout << "Every character must be separated by a space." << endl;
-	cout << "(Example: 2 4 + 1 -) This will add 2 and 4 then subtract 1." << endl << endl;
+	cout << "------------------------------------------------------------------------------------------" << endl;
+	cout << "| Please enter the integers along with the instructions you wish to push onto the stack. |" << endl;
+	cout << "| You must push two integers to begin with, followed by an operation (+, -, *, /).       |" << endl;
+	cout << "| Every character must be separated by a space.                                          |" << endl;
+	cout << "| (Example: 2 4 + 1 -) This will add 2 and 4 then subtract 1.                            |" << endl;
+	cout << "------------------------------------------------------------------------------------------" << endl << endl;
 	cout << "$ " << flush;
 }
 
