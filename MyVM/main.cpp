@@ -18,7 +18,6 @@ int main() {
 
 	startProcess(sasm);
 
-	pauseScreen();
 	cout << endl;
 
 	
