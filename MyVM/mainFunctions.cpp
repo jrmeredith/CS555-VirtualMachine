@@ -50,7 +50,13 @@ void startProcess(const char *dir) {
 	si.cb = sizeof(si);
 	ZeroMemory(&pi, sizeof(pi));
 
-	CreateProcess(dir, NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
+	if (!CreateProcess(dir, NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi)) {
+		cout << "Could not find [" << dir << "]!" << endl;
+		cout << "MyVM will now close..." << endl;
+		pauseScreen();
+		exit(1);
+	}
+
 	WaitForSingleObject(pi.hProcess, INFINITE);
 	CloseHandle(pi.hProcess);
 	CloseHandle(pi.hThread);
