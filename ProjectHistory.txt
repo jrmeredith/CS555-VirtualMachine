@@ -1,0 +1,733 @@
+*   commit 292f171f206469ce9a69a023d53111a935abd0a3
+|\  Merge: a805a86 c5d3153
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Tue Jul 17 15:58:43 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Tue Jul 17 15:58:43 2018 -0700
+| | 
+| |     Merge branch 'mainprog'
+| |     
+| |     Completed all work on the mainprog branch.  Now merging into master.
+| | 
+| * commit c5d315342ce53581f2d46c9e6efb289cd85ee2d9
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Tue Jul 17 15:55:42 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Tue Jul 17 15:55:42 2018 -0700
+| | 
+| |     Nothing really updated
+| | 
+| * commit b16ed2784b946ef39261a5e3c6480b1a2f70f93e
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Tue Jul 17 15:54:18 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Tue Jul 17 15:54:18 2018 -0700
+| | 
+| |     Simple update to files
+| |     
+| |     Updated the readme to better reflect how to use the program.
+| | 
+| * commit 42159026778be996245ab7e36af5d2bcac36ed79
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sun Jul 15 11:42:56 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sun Jul 15 11:42:56 2018 -0700
+| | 
+| |     Added a check and error message.
+| |     
+| |     startProcess() will now check if the directory exists.  If it does
+| |     not, it will display an error and close.
+| | 
+| * commit 260883c3ed286e630b6b1df2ab1d6f52d62d0c09
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sat Jul 14 15:00:53 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sat Jul 14 15:00:53 2018 -0700
+| | 
+| |     Testing some values
+| | 
+| * commit 9c78ea42f2821898c1c9865187a32e35be48f653
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sat Jul 14 14:58:56 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sat Jul 14 14:58:56 2018 -0700
+| | 
+| |     New function definition
+| |     
+| |     Added a new function, welcome().  This will display a samll
+| |     welcome screen.
+| |     
+| |     Also changed the instructions() function.  Added some lines to
+| |     create boxes to help with the look.
+| | 
+| * commit 60d22ca1653ef0837e04ec4b0fb9fc2b39d696a2
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sat Jul 14 14:58:11 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sat Jul 14 14:58:11 2018 -0700
+| | 
+| |     Added welcome() declaration
+| |     
+| |     Added new declaration to function welcome()
+| | 
+| * commit 9661669278800ab66ee1e350ac30b358cb36cd85
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sat Jul 14 14:56:59 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sat Jul 14 14:56:59 2018 -0700
+| | 
+| |     Added welcome() function
+| |     
+| |     Added a call to the welcome() function defined in mainFunctions
+| | 
+| * commit 39a44a4e1e92cd1d8b630060707faa7010d274c8
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sat Jul 14 08:06:21 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sat Jul 14 08:06:21 2018 -0700
+| | 
+| |     Testing some instructions
+| |     
+| |     Just testing some new instructions in test.sasm
+| | 
+| * commit 9bd3b09849b51372577af2845bba736d2fa56c69
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sat Jul 14 08:05:33 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sat Jul 14 08:05:33 2018 -0700
+| | 
+| |     Creating new instructions
+| |     
+| |     Created and generated new instructions in out.bin
+| | 
+| * commit bb751571cd5da39f30380fbc782239e080d02e45
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Sat Jul 14 08:04:32 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Sat Jul 14 08:04:32 2018 -0700
+| | 
+| |     Cleaned up code
+| |     
+| |     Removed a call to pauseScreen() as it was not neccessary.
+| | 
+| * commit 5971bc7e0e5c0acec336c6089602b0320a7e54e2
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Fri Jul 13 15:18:30 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Fri Jul 13 15:18:30 2018 -0700
+| | 
+| |     Updated all code to be controlled by MyVM
+| |     
+| |     All code will now be controllable by MyVM.  This program will
+| |     allow you to input data, then run both sasm and stack-vm.  Then
+| |     the user's results will be displayed.
+| | 
+| * commit c02c2bc5a23aa5e6855e9e6fb162e378bf90b69d
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 18:02:18 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 18:02:18 2018 -0700
+| | 
+| |     Removed a print statement
+| |     
+| |     Removed a print statement that was incorrectly stateting that
+| |     stack-vm.exe and out.bin needed to be in the same folder.
+| | 
+| * commit d58d4b875024a15eded1c90b3e76056d55d2f3b9
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 18:01:21 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 18:01:21 2018 -0700
+| | 
+| |     Changed file path to sasm.exe
+| |     
+| |     For some reason, MyVM could not find sasm.exe.  I just changed the
+| |     file path, it works now.
+| | 
+| * commit f871ef08cf99e5de758c404899edbac9d03f1f38
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 17:53:42 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 17:53:42 2018 -0700
+| | 
+| |     Wrote main code for MyVM
+| |     
+| |     Wrote code for MyVM.  The goal of this progam will be to control
+| |     the two pieces of the virtual machine.  The code for this is not
+| |     yet complete.  I still want to use somthing other than the call
+| |     to system() for executing the other exe files.  Will need to
+| |     research this.
+| | 
+| * commit 68a6a73e058b155b224965c5590c0458dcf62770
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 17:07:33 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 17:07:33 2018 -0700
+| | 
+| |     Adding new source file
+| |     
+| |     This file will be used to control the VM, allowing the user to run
+| |     sasm.exe and stack-vm.exe
+| | 
+| * commit 196b0956a7462cf7e4071b8494d94d0c9acd18bb
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 16:47:07 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 16:47:07 2018 -0700
+| | 
+| |     Testing with out.bin and test.sasm
+| |     
+| |     Just playing with the values in test.sasm
+| | 
+| * commit 4bea389d173d6d8abdf7813908424cba270be514
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 16:45:45 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 16:45:45 2018 -0700
+| | 
+| |     Changed sasm.cpp to read directly from test.sasm file
+| |     
+| |     The sasm.exe will now read directly from test.sasm.  This means
+| |     just running the exe is enough to generate an out.bin file.
+| | 
+| * commit 5817797eb1c646a2d38f85869ae6cfecfde8de6a
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 16:44:26 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 16:44:26 2018 -0700
+| | 
+| |     Will now look into sasm for out.bin
+| |     
+| |     The stack-vm.exe will now look into the sasm folder for the
+| |     out.bin file.
+| | 
+| * commit ed3edad1766532260059fb755b5a411455048583
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 16:43:11 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 16:43:11 2018 -0700
+| | 
+| |     Deleted out.bin from stack-vm folder
+| |     
+| |     Removed out.bin from stack-vm folder.  stack-vm.exe will now look
+| |     int the sasm folder for out.bin.
+| | 
+| * commit 6d114c40d2c17f1290995640de52108b90dd1552
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 16:03:09 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 16:03:09 2018 -0700
+| | 
+| |     Added some print statements
+| |     
+| |     Added a few cout statements to help with readability.
+| | 
+| * commit d5053545cbf961d1de388aec65074587514a767a
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 15:58:01 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 15:58:01 2018 -0700
+| | 
+| |     Updated main.cpp to read from file
+| |     
+| |     main.cpp will now read the out.bin file directly and store that
+| |     data into a vector.
+| |     
+| |     Also added a function to pause the console screen.  This way the
+| |     use can run the exe file and read the information.
+| | 
+| * commit 72e7f07014fe4101a1e7ba1ba05b3d1c4f7c55c6
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 15:56:59 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 15:56:59 2018 -0700
+| | 
+| |     Updated .gitignore
+| |     
+| |     Ignoring VS generated things.
+| | 
+* | commit a805a86fe30d220f199a15d00dfe6a245097c660
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 18:17:32 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 18:17:32 2018 -0700
+| | 
+| |     Nevermind, I'll create a new branch, ha!
+| |     
+| |     Instead of adding these to the master, I will just create a new
+| |     branch for now.  I want to keep the master intact.
+| | 
+* | commit 1c75062bcc9f075622e3f65206a81dd92037ab84
+| | Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | AuthorDate: Thu Jul 12 18:11:56 2018 -0700
+| | Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| | CommitDate: Thu Jul 12 18:11:56 2018 -0700
+| | 
+| |     Adding all files from MyVM
+| |     
+| |     Adding all the files from MyVM to master branch.  I want to
+| |     experiment some with these files.
+| | 
+* | commit 5accb5ac768cf6763a667ba5da2dc4422f32b4be
+|/  Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+|   AuthorDate: Thu Jul 12 16:09:16 2018 -0700
+|   Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+|   CommitDate: Thu Jul 12 16:09:16 2018 -0700
+|   
+|       Updated .gitignore
+|       
+|       Now ignoring more VS files
+| 
+* commit 1642e8491f271f8a97f01c949a056c9af48b4d9c
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 12:02:34 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 12:02:34 2018 -0700
+| 
+|     Adding some addtional files to track
+| 
+* commit bb1f73848fdbe2b97c92c7348e493bfb5de69fbd
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 12:01:04 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 12:01:04 2018 -0700
+| 
+|     Updated main.cpp to read from bin.out
+|     
+|     Changed code in main.cpp so it will read instructions from
+|     binary file.
+| 
+* commit 3a84df9b7b161e582253948e3222eb2b869875a2
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 11:59:26 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 11:59:26 2018 -0700
+| 
+|     Fixed a bug in sasm.cpp
+|     
+|     There was a bug in one of the lines that caused issues with
+|     compiling.  Should be fixed now.
+|     
+|     * missing a & in one line
+| 
+* commit e4435ee1c806e3cc62e3531fcda09151b3d87eaa
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 11:58:15 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 11:58:15 2018 -0700
+| 
+|     Removed some items from ignore list
+|     
+|     I wanted to track the *.bin files
+| 
+* commit 80f0ab8f36a7a681ca2d042cee297bd48f4e9897
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 11:34:43 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 11:34:43 2018 -0700
+| 
+|     makefile was set to clean the sasm.exe
+|     
+|     The makefile was removing the sasm.exe file, which is needed for
+|     the next step in the VM.  sasm.exe will not be deleted now.
+| 
+* commit d89a179558d6e2e74e280502264234295a8aecf9
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 11:30:26 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 11:30:26 2018 -0700
+| 
+|     Sasm makefile was not cleaning
+|     
+|     The sasm makefile was not cleaning the temp *.o files.  It should
+|     now be fixed.  Had to add clean to all:
+| 
+* commit c0bcb823fb1078bc97840f19ede8975440c0e1cf
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 11:03:02 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 11:03:02 2018 -0700
+| 
+|     Added halt instruction
+|     
+|     Added a halt instruction to the compileToInstructions() function.
+| 
+* commit 0eae643c7686ab62f296be60343f23e929d7f1b2
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 10:41:49 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 10:41:49 2018 -0700
+| 
+|     Updated .gitignore
+|     
+|     Added *.o, *.bin, and *.stackbump to ignore list.
+| 
+* commit f386951cbc154e18e287065adc84bae89583911f
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 10:38:05 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 10:38:05 2018 -0700
+| 
+|     Fixed an error with the makefile
+|     
+|     First line was incorrect, fixed the error.
+| 
+* commit 0dae2eece6d6ce035be1621cb12fbccdf9435973
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 10:20:57 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 10:20:57 2018 -0700
+| 
+|     Nothing different
+| 
+* commit 15475bcef361e682e719d330e82de98de95b1635
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 12 10:19:09 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 12 10:19:09 2018 -0700
+| 
+|     Updating all files
+| 
+* commit cdd997b4384e8bf88e82ba785c95288e7d19757b
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Wed Jul 11 15:53:35 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Wed Jul 11 15:53:35 2018 -0700
+| 
+|     Test file for virtual machine
+| 
+* commit 77d8da4c63972860cd9c131fb4370342aa3a94f4
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Wed Jul 11 15:52:32 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Wed Jul 11 15:52:32 2018 -0700
+| 
+|     Wrote main code for sasm.cpp
+|     
+|     Wrote all main code for sasm.cpp
+| 
+* commit 37a69e339d4f4a2c801eba4a4b58ea94348c7070
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Wed Jul 11 15:18:54 2018 -0700
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Wed Jul 11 15:18:54 2018 -0700
+| 
+|     Added sasm.cpp
+|     
+|     Initial version of sasm.cpp
+| 
+* commit 130186e9b0e4f4029fa31abf4e06398bf38419c0
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 14:41:02 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 14:41:02 2018 -0500
+| 
+|     Added definitions for isGroup() isSpecial() isSpace()
+|     
+|     Added definitions for Lexer member functions isGroup(),
+|     isSpecial(), and isSpace().
+| 
+* commit 9dfa4d096ef115f43d3a34f24e24b15e73cd09b9
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 14:22:35 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 14:22:35 2018 -0500
+| 
+|     Added lexer code
+|     
+|     Wrote main body of the lex() member function.
+| 
+* commit 0e188bcdcd88bfcde30af10c2c5dbbef53dfee47
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 13:58:10 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 13:58:10 2018 -0500
+| 
+|     New lexer.cpp file
+|     
+|     Creating a new file, lexer.cpp
+| 
+* commit 709a3261ed29939823b05b55591f4e1fd353e515
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 13:57:13 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 13:57:13 2018 -0500
+| 
+|     Completed lexer header
+|     
+|     Finished building the lexer header file.
+| 
+* commit ae9e0f16d168bb10ee472d10ec787405fbcf6e01
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 11:46:31 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 11:46:31 2018 -0500
+| 
+|     Created lexer file
+|     
+|     Created lexer.h file.  Added new file to the sasm folder.
+|     
+|     * sasm/
+|     * lexer.h
+| 
+* commit 24d5df40e709bb4bc09f5ed36fe26f5e4af54346
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 11:40:53 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 11:40:53 2018 -0500
+| 
+|     Created folder structure
+|     
+|     Added a folder (stack-vm) to hold all files associated with the
+|     stack-vm class.  Should be better organized when future files are
+|     added.
+|     
+|     * stack-vm/
+| 
+* commit 519da4a8df982db528c6a60492d9511b24690af8
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 11:32:58 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 11:32:58 2018 -0500
+| 
+|     Used new instructions
+|     
+|     Used the new instructions added to doPrimative().
+|     Subtract, multiply, divide.
+| 
+* commit 43557b9f989f965cc3c850bfde0b09d2b81101f8
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Sun Jul 8 11:30:43 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Sun Jul 8 11:30:43 2018 -0500
+| 
+|     Added addtional cases
+|     
+|     Added three addtional cases to the doPrimitave() switch; subtract,
+|     multiply, divide.
+|     
+|     * case 2: subtract
+|     * case 3: multiply
+|     * case 4: divide
+| 
+* commit 19831bcb2d1926d0082aa692b0e7d1be75d8a405
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Fri Jul 6 15:38:56 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Fri Jul 6 15:38:56 2018 -0500
+| 
+|     Removed variable and added cout statement
+|     
+|     Removed a variable from the loadProgram() function.  The variable
+|     stored a vector size to be used in a for-loop.  A call to
+|     vector.size() was used instead.
+|     
+|     A cout statement was added to the loadProgram() function.  It
+|     will display a message onscreen if the program is loaded
+|     successfully.
+|     
+|     * removed int32_t vecSize
+|     * added cout << "Program loaded successfully!" << endl
+| 
+* commit d53d8a57aa0edef7f0ea64fcca84989a24042810
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Fri Jul 6 15:36:42 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Fri Jul 6 15:36:42 2018 -0500
+| 
+|     Removed cout statement from main
+|     
+|     Removed the cout "Program loaded" statement from the main file.
+|     This statement has now been moved into the loadProgram() function.
+| 
+* commit 65605da4df70049fad86cee095eb7f04b6995ab2
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 5 12:28:00 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 5 12:28:00 2018 -0500
+| 
+|     Fixed the Assertion Failed bug
+|     
+|     Fixed the issue with the Assertion Failed vector subscript out
+|     of range bug.  This was happening because when a StackVM object
+|     was initialized, the memory vector used reserve() when allocating
+|     memory.  This does not affect size().  So when a for-loop tries
+|     to write information, it is considered out of bounds.  I am now
+|     using resize() instead.
+| 
+* commit 2f1007df98430861e32668976ad6391462d31637
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Thu Jul 5 11:56:09 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Thu Jul 5 11:56:09 2018 -0500
+| 
+|     Removed pause line
+|     
+|     Removed the system("pause") line from main.cpp
+| 
+* commit 2136644f97f0c6dd13254e2664d8c21af2ebec05
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Wed Jul 4 09:32:13 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Wed Jul 4 09:32:13 2018 -0500
+| 
+|     Fixed bug in loadProgram() function
+|     
+|     Fixed a bug in the loadProgram() function.  For some reason using
+|     prog.size() in the for-loop was not working correctly and
+|     resulted in breaking the loop early.  Instead, I just used a
+|     variable to store the value and used that in the loop.
+|     
+|     There is still an issue with Assertion Failure in debug mode,
+|     however the program runs fine while in Release mode.  I will
+|     need to research why this happens.
+| 
+* commit 24bd9425bc5c6cef1e5fe635da4f21c67962fe70
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Wed Jul 4 09:29:14 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Wed Jul 4 09:29:14 2018 -0500
+| 
+|     Added a pause to main.cpp
+|     
+|     Added a pause statement in main.cpp so the console window
+|     will stay open and wait for user input.
+| 
+* commit c41428671a74fdc3b3d90b8ed509efa48bec5c5b
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 13:00:51 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 13:00:51 2018 -0500
+| 
+|     Fixed bug in doPrimitive function
+|     
+|     Fixed a bug in the doPrimitive() function where the stack
+|     pointer did not decrement.
+|     
+|     * --sp;
+| 
+* commit d6f50c72694f03dc5b086ed057583563ab900ded
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 12:50:11 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 12:50:11 2018 -0500
+| 
+|     *.sln
+|     *.vcxproj
+|     *.filters
+|     *.user
+|     *.vs/
+| 
+* commit aeedc1512f4e83d62e9608f5ac5974ad999d127d
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 12:43:14 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 12:43:14 2018 -0500
+| 
+|     Added main body of program
+|     
+|     Created an object from the StackVM class.
+|     Made calls to StackVM member functions.
+| 
+* commit e52e4a5b4c2231ce00decb63db32d6ca23b1305d
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 12:39:04 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 12:39:04 2018 -0500
+| 
+|     Created main.cpp
+|     
+|     Added main.cpp file to conrtol the main program
+| 
+* commit 56348c8204109d9f024987b55e35ca48b4c82117
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 12:26:23 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 12:26:23 2018 -0500
+| 
+|     Updated .gitignore
+|     
+|     Added Visual Studio generated files to the .gitignore
+|     
+|     * *.sln
+|     * *.vcxproj
+|     * *.filters
+|     * *.user
+|     * *.vs/
+| 
+* commit 02a33883a1a52eb83fff1ab493306064ad2f9be4
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 12:24:58 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 12:24:58 2018 -0500
+| 
+|     Added .gitignore
+|     
+|     Added a .gitignore file to repo
+| 
+* commit c11dd468a753d1f8f7da43de79740d508036fb0a
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 12:18:39 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 12:18:39 2018 -0500
+| 
+|     Added StackVM member definitions
+|     
+|     Added defintions for all StackVM member functions
+|     
+|     * Constructor
+|     * getType
+|     * getData
+|     * fetch
+|     * decode
+|     * execute
+|     * doPrimitive
+|     * run
+|     * loadProgram
+| 
+* commit 33911947eccf4056d5ad07e55cc8bfd0c69afc99
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 11:49:34 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 11:49:34 2018 -0500
+| 
+|     Renamed a file and updated header
+|     
+|     Renamed vm.cpp to stack-vm.cpp
+|     Added StackVM class to header along with member variables and
+|     function declarations.
+|     
+|     * Renamed vm.cpp->stack-vm.cpp
+|     * Added class StackVM
+|     * Added member variables and functions to StackVM
+| 
+* commit 99d62fbf0f39232764687b2ab9c7f7536be537af
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Tue Jul 3 11:16:30 2018 -0500
+| Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| CommitDate: Tue Jul 3 11:16:30 2018 -0500
+| 
+|     Added a header file for stack machine
+|     
+|     Created a header file for stack-vm.cpp.  Header will include
+|     some #include statements
+|     
+|     * Added header file
+| 
+* commit 51ebc3b2f14ab32f7c68d85037c6f1138a247b4a
+| Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+| AuthorDate: Mon Jul 2 09:46:16 2018 -0500
+| Commit:     GitHub <noreply@github.com>
+| CommitDate: Mon Jul 2 09:46:16 2018 -0500
+| 
+|     Create README.md
+|     
+|     My goal for this project.
+| 
+* commit caf4b9dd90befe9a9ec131757fd1cd725c4ebb07
+  Author:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+  AuthorDate: Mon Jul 2 09:36:39 2018 -0500
+  Commit:     Jake Meredith <36305585+jrmeredith@users.noreply.github.com>
+  CommitDate: Mon Jul 2 09:36:39 2018 -0500
+  
+      Initial Project Version
